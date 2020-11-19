@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Mobile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button data-dropdown>
+      <a href="sobre.html">Clique</a>
+      <ul class="dropdown-menu">
+        <li><a href="empresa.html">A empresa</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="socios.html">Sócios</a></li>
+        <li><a href="investidores.html">Investidores</a></li>
+      </ul>
+    </button>
+
+    <button data-dropdown data-dropdown-hover>
+      <a href="sobre.html">Hover</a>
+      <ul class="dropdown-menu">
+        <li><a href="empresa.html">A empresa</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="socios.html">Sócios</a></li>
+        <li><a href="investidores.html">Investidores</a></li>
+      </ul>
+    </button>
+
+    <script src="./dist/dropdown-menu.js"></script>
+    <script>
+      const dropdownMenu = new DropdownMenu('[data-dropdown]');
+      dropdownMenu.init();
+    </script>
+  </body>
+</html>
